@@ -38,5 +38,17 @@ First, there was just raw information.
 + Mobile first
 + No mouse/keyboard
 + Slow Internet
++ Cost of page visit
 + [Contrast](http://contrast-finder.tanaguru.com/)
 + [W3 Overview](https://www.quotes.uk.com/web-design/accessibility.php)
+
+![Cost per Page Visit](https://blog.cloudflare.com/content/images/image04_4.png)
+_Everybody wins when you keep your site as lightweight as possible_
+
+### Next: [Sparks][sparks]
+
+
+
+[kindling]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/kindling.md
+[sparks]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/sparks.md
+[ignition]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/ignition.md
