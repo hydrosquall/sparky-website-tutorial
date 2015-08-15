@@ -21,12 +21,13 @@ Introducing web development through building a basic website without external de
 1. Open up this [Codepen][codepen] 
 2. HTML corresponds to `index.html`, CSS corresponds to `assets/styles.css`, and JS corresponds to `assets/main.js`
 
+
 + Visit [this page][tutorial] and get ready to learn.
-+ Refer to 'reference-files' if you get stuck!
++ Refer to `reference-files` if you get stuck!
 + Leave comments on any files or lines you find confusing
 
 ### Self-Paced
-+ Click "fork" to make a copy of these files for your computer
++ Click "fork" to make a copy of these files for your account
 + Open up the folder `starter-files` 
 + _A fully documented version of the basic directions will be posted if time permits._
 
