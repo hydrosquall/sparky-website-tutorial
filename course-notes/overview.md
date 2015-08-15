@@ -1,19 +1,31 @@
-_Making websites involves many steps!_
-![How to drawn an owl](http://sodiumlightsthehorizon.co.uk/cms/wp-content/uploads/2010/09/13357-ba33a2-500-407.jpg)
+# A Crash Course in Web Development
+
+_Making websites involves many steps! Let's break it into pieces_
+
+![How to drawn an owl](http://snag.gy/Z2Spu.jpg)
 
 ## Topics Covered
 
 ### Start: Essential Tools
 + Modern Browser with Web Inspector
 + Computer
++ Text Editor
+
+Before we begin, pick a favorite website and open up your web inspector. 
+
+> Talk about web inspector. mess around with changing text and picking colors
+
+See if you can figure out how to put a fake headline on a website! 
 
 ### What are Websites? How do they Work?
 + Servers and Clients
 
 ### Website Structure - Overview
-+ HTML
++ HTML -
+> Websites from 1995
+> Modern Inspiration Gallery
 + CSS
-    + CSS Zen Garden
+> Investigate CSS Zen Garden
 + JS
 
 ## A note about Accessibility: 
@@ -54,6 +66,7 @@ _Making websites involves many steps!_
     + Faster + better workflow with Sublime Text 3 Plugins (Emmett etc)
     + Type Faster (suite gauntlet link)
     + Scaffolding Grid Frameworks: Bootstrap and Foundation
+    + Tooling Workflows with Gulp and Grunt
 + Site Performance
     + Pagespeed Insights
     + File compression and server optimization
