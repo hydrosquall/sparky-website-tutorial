@@ -1,6 +1,6 @@
 # Sparky Website Tutorial
 
-[Cameron Yick][author] for [Rippowam Labs][sponsor]
+By[Cameron Yick][author] for [Rippowam Labs][sponsor]
 
 Introducing web development through building a basic website without external dependencies
 
