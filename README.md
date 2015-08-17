@@ -1,5 +1,8 @@
 # Sparky Website Tutorial
 
+![Course Pitch](sparky.png)
+
+
 By [Cameron Yick][author] for [Rippowam Labs][sponsor]
 
 Introducing web development through building a lightweight business website
@@ -42,8 +45,8 @@ After you have the starter files ready...
 <!-- TODO: Refactor jade items with mixins -->
 [author]: http://www.cameronyick.us
 [sponsor]: https://github.com/RippowamLabs
-[tutorial]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/overview.md
+[tutorial]: course-notes/overview.md
 [final site]: http://www.cameronyick.us/sparky/
-[resources]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/resources.md
+[resources]: course-notes/resources.md
 [starterFiles]: https://github.com/hydrosquall/sparky-website-tutorial/tree/master/course-notes
 [codepen]: http://codepen.io/hydrosquall/pen/KpLqZV
