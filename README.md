@@ -42,7 +42,7 @@ Introducing web development through building a basic website without external de
 [author]: http://www.cameronyick.us
 [sponsor]: https://github.com/RippowamLabs
 [tutorial]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/overview.md
-[final site]: http://wwww.cameronyick.us/demo
+[final site]: http://wwww.cameronyick.us/sparky
 [resources]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/resources.md
 [starterFiles]: https://github.com/hydrosquall/sparky-website-tutorial/tree/master/course-notes
 [codepen]: https://codepen.io/samplelink

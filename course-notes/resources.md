@@ -15,6 +15,10 @@ Things you'll use again and again, regardless of experience level!
 
 ## Newsletters
 
+## Placeholder Content
+    + [Images](http://www.wpfreeware.com/tutorial/placeholder-images-generator-service-web-designers/)
+    + Lorem Ipsum Makers
+
 ## Sandbox
 + Github Pages: Site Deployment
 + Code Previews

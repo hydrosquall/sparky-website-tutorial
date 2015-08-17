@@ -10,20 +10,23 @@
 // made with intenspiration
 @hydrosquall - Cameron Yick 2015
 */
-
 $color_gallery_approx: #eee;
 $color_tundora_approx: #444;
 $color_black_haze_approx: #f7f7f7;
 $color_wild_sand_97_approx: rgba(245, 245, 245, 0.97);
 $mine_shaft_80: rgba(50, 50, 50, 0.8);
 
-$color_mine_shaft_approx: #333;
+$spark_yellow: #fafa3c;
+
+$color_mine_shaft_approx: #333; /* Slider Color */
 $white: #fffff6;
 $color_silver_chalice_approx: #aaa;
 $white_10: rgba(255, 255, 255, 0.1);
-$accent: purple; /* striking content */
-$icon_hover: navy; /* Link On Hover */
+$accent: $spark_yellow; /* striking content */
+$icon_hover: #59ABE3; /* Link On Hover */
 $color_fuscous_gray_approx: #555;
+
+
 
 //fonts
 $font_0: 'Roboto';
@@ -52,7 +55,7 @@ $font_4: 'Roboto Slab';
 }
 
 // Styles arranged alphabetically - Refactor to by content type if time permits.
-// 
+// CSS Resets
 html {
     margin: 0;
     padding: 0;
@@ -70,7 +73,10 @@ body {
         background: $color_black_haze_approx;
     }
     .slider {
-        background: $color_mine_shaft_approx;
+        background: 
+        $icon_hover 
+        // url('https://unsplash.it/1000/500') center
+        ;
     }
     .footer {
         background: $color_mine_shaft_approx;
@@ -108,13 +114,13 @@ body {
 .header {
     line-height: 80px;
     width: 100%;
-    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
     transition: line-height 0.2s linear, box-shadow 0.2s linear;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    background: $color_wild_sand_97_approx;
+    background:  $color_wild_sand_97_approx;
+    // 40 px high
     &.small {
         line-height: 50px;
         //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
@@ -129,7 +135,11 @@ body {
     top: 50%;
     //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
     transform: translateY(-50%);
-    background: $accent;
+    background: 
+        $accent 
+        url('http://dummyimage.com/170x40/333333/fafa3c.png&text=SPARK')
+        // url('http://ipsumimage.appspot.com/170x40.png?f=fafa3c?l=sometext')
+        ;
     float: left;
     height: 40px;
     width: 170px;
@@ -163,7 +173,6 @@ h2 {
         border: 1px solid $white;
         padding: 8px 13px;
         font-size: 20px;
-        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: background 0.15s linear;
         &:hover {
             background: $white_10;
@@ -236,14 +245,12 @@ h2 {
         }
     }
     .icon {
-        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
         border-radius: 50%;
         height: 85px;
         width: 85px;
         line-height: 85px;
         text-align: center;
         margin: 0 auto;
-        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: background 0.25s linear, color 0.25s linear;
         &.side {
             position: absolute;
@@ -257,14 +264,13 @@ h2 {
     .imgholder {
         height: 300px;
         width: 100%;
-        background: $color_mine_shaft_approx;
-        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        background: $color_mine_shaft_approx url('https://unsplash.it/370?random') center no-repeat;
         transition: background 0.3s linear;
     }
     &.bg {
         background: $white;
         &:hover .imgholder {
-            background: $color_fuscous_gray_approx;
+            background: $color_fuscous_gray_approx url('https://unsplash.it/g/370?random') center no-repeat;
         }
     }
     &.pointer {
@@ -303,8 +309,8 @@ h2 {
         }
     }
 }
-.reset {
-    text-align: left !important;
+.callout {
+    // text-align: left !important;
     &:after {
         display: none !important;
     }
@@ -330,7 +336,7 @@ ul.nav {
             text-decoration: initial;
         }
         &:hover a {
-            color: $accent;
+            color: $icon-hover;
         }
     }
 }
@@ -346,5 +352,8 @@ h1.hero {
         margin-top: 15px;
     }
 }
-
+.footer a {
+    color: $accent;
+    text-decoration: none;
+}
 @import 'scss/mediaQueries';
