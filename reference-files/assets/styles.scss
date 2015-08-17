@@ -1,0 +1,350 @@
+@charset 'utf-8';
+/*!
+ _               _                                 _ _ 
+| |__  _   _  __| |_ __ ___  ___  __ _ _   _  __ _| | |
+| '_ \| | | |/ _` | '__/ _ \/ __|/ _` | | | |/ _` | | |
+| | | | |_| | (_| | | | (_) \__ \ (_| | |_| | (_| | | |
+|_| |_|\__, |\__,_|_|  \___/|___/\__, |\__,_|\__,_|_|_|
+       |___/                        |_|                
+
+// made with intenspiration
+@hydrosquall - Cameron Yick 2015
+*/
+
+$color_gallery_approx: #eee;
+$color_tundora_approx: #444;
+$color_black_haze_approx: #f7f7f7;
+$color_wild_sand_97_approx: rgba(245, 245, 245, 0.97);
+$mine_shaft_80: rgba(50, 50, 50, 0.8);
+
+$color_mine_shaft_approx: #333;
+$white: #fffff6;
+$color_silver_chalice_approx: #aaa;
+$white_10: rgba(255, 255, 255, 0.1);
+$accent: purple; /* striking content */
+$icon_hover: navy; /* Link On Hover */
+$color_fuscous_gray_approx: #555;
+
+//fonts
+$font_0: 'Roboto';
+$font_1: 'Open Sans';
+$font_2: 'Arial';
+$font_3: sans-serif;
+$font_4: 'Roboto Slab';
+
+//@extend-elements
+//original selectors
+//.col .service, .col .feature
+%extend_1 {
+    font-size: 21px;
+    font-weight: 300;
+    font-family: $font_4, $font_3;
+}
+
+//original selectors
+//.col, .col.four, .col.three, .col.two
+%extend_2 {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+}
+
+// Styles arranged alphabetically - Refactor to by content type if time permits.
+// 
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.section {
+    width: 100%;
+    .container {
+        padding: 30px 0 50px;
+    }
+    &.bg {
+        background: $color_black_haze_approx;
+    }
+    .slider {
+        background: $color_mine_shaft_approx;
+    }
+    .footer {
+        background: $color_mine_shaft_approx;
+    }
+}
+.container {
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+    color: $color_tundora_approx;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: $font_0, $font_1, $font_2, $font_3;
+    overflow: hidden;
+    > h1 {
+        &:after {
+            content: "";
+            width: 30px;
+            position: relative;
+            border-bottom: 1px solid $color_silver_chalice_approx;
+            display: block;
+            text-align: center;
+            margin: auto;
+            margin-top: 15px;
+        }
+        &:not(.hero) {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+}
+.hold {
+    height: 80px;
+}
+.header {
+    line-height: 80px;
+    width: 100%;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: line-height 0.2s linear, box-shadow 0.2s linear;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: $color_wild_sand_97_approx;
+    &.small {
+        line-height: 50px;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 1px 3px 0 $mine_shaft_80;
+        > .container > #logo {
+            height: 40px;
+        }
+    }
+}
+#logo {
+    position: absolute;
+    top: 50%;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-50%);
+    background: $accent;
+    float: left;
+    height: 40px;
+    width: 170px;
+    margin-left: 5px;
+}
+.slidercontent {
+    text-align: center;
+}
+.hero {
+    font-family: $font_4, $font_3;
+    color: $white;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+h2 {
+    font-family: $font_4, $font_3;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    &.hero {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+}
+.call {
+    color: $white;
+    display: block;
+    margin-bottom: 20px;
+    span {
+        display: inline;
+        border: 1px solid $white;
+        padding: 8px 13px;
+        font-size: 20px;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: background 0.15s linear;
+        &:hover {
+            background: $white_10;
+            cursor: pointer;
+        }
+    }
+}
+.col {
+    float: left;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    &.four {
+        width: 23%;
+        margin: 0 1%;
+    }
+    &.three {
+        width: 31.3%;
+        margin: 0 1%;
+    }
+    &.two {
+        width: 40%;
+        margin: 0 2.5%;
+        padding: 0 2.5%;
+    }
+    &.extrapad {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .service {
+        @extend %extend_1;
+        &:after {
+            content: "";
+            width: 50px;
+            position: relative;
+            border-bottom: 1px solid $color_gallery_approx;
+            display: block;
+            text-align: center;
+            margin: auto;
+            margin-top: 15px;
+        }
+    }
+    .feature {
+        @extend %extend_1;
+        font-size: 19px;
+    }
+    h1 {
+        padding: 0 1%;
+        text-align: center;
+        &.side {
+            margin-left: 50px;
+            text-align: left;
+        }
+    }
+    p {
+        padding: 0 1%;
+        text-align: center;
+        &.side {
+            margin-left: 50px;
+            text-align: left;
+        }
+    }
+    span {
+        &.feature {
+            font-size: 20px;
+        }
+        &.side:first-of-type {
+            margin-left: 50px;
+            text-align: left;
+        }
+    }
+    .icon {
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 50%;
+        height: 85px;
+        width: 85px;
+        line-height: 85px;
+        text-align: center;
+        margin: 0 auto;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: background 0.25s linear, color 0.25s linear;
+        &.side {
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            top: -15px;
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .imgholder {
+        height: 300px;
+        width: 100%;
+        background: $color_mine_shaft_approx;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: background 0.3s linear;
+    }
+    &.bg {
+        background: $white;
+        &:hover .imgholder {
+            background: $color_fuscous_gray_approx;
+        }
+    }
+    &.pointer {
+        cursor: pointer;
+    }
+    &:hover > .icon {
+        background: $icon_hover;
+        color: $white;
+        &.side {
+            background: initial;
+            color: initial;
+        }
+    }
+}
+.responsivegroup {
+    display: none;
+}
+.group {
+    &.margin {
+        margin-bottom: 20px;
+    }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+.left {
+    text-align: left;
+    > {
+        h1 {
+            text-align: left;
+        }
+        p {
+            text-align: left;
+        }
+    }
+}
+.reset {
+    text-align: left !important;
+    &:after {
+        display: none !important;
+    }
+}
+.white {
+  color: $white;
+}
+
+ul.nav {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        float: left;
+        position: relative;
+        a {
+            //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: color 0.2s linear;
+            font-size: 18px;
+            padding: 21px;
+            color: initial;
+            text-decoration: initial;
+        }
+        &:hover a {
+            color: $accent;
+        }
+    }
+}
+h1.hero {
+    font-size: 54px;
+    &:after {
+        content: "";
+        width: 300px;
+        position: relative;
+        border-bottom: 1px solid $color_silver_chalice_approx;
+        text-align: center;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+
+@import 'scss/mediaQueries';

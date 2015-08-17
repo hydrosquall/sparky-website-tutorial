@@ -1,15 +1,27 @@
-/*
-  terrible.css
-  Andrew Tunecliffe, 2015
-  http://atunnecliffe.com
-  Modified for tutorial by Cameron Yick
-*/
-/* uncomment to see outlines of stuff when you hover *-/
-:hover {
-  background:rgba(0, 0, 0, 0.1);
-}/**/
+/*!
+ _               _                                 _ _ 
+| |__  _   _  __| |_ __ ___  ___  __ _ _   _  __ _| | |
+| '_ \| | | |/ _` | '__/ _ \/ __|/ _` | | | |/ _` | | |
+| | | | |_| | (_| | | | (_) \__ \ (_| | |_| | (_| | | |
+|_| |_|\__, |\__,_|_|  \___/|___/\__, |\__,_|\__,_|_|_|
+       |___/                        |_|                
 
-html,
+// made with intenspiration
+@hydrosquall - Cameron Yick 2015
+*/
+/* striking content */
+/* Link On Hover */
+.col .service, .col .feature {
+  font-size: 21px;
+  font-weight: 300;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -19,6 +31,22 @@ body {
   width: 100%;
 }
 
+.section .container {
+  padding: 30px 0 50px;
+}
+
+.section.bg {
+  background: #f7f7f7;
+}
+
+.section .slider {
+  background: #333;
+}
+
+.section .footer {
+  background: #333;
+}
+
 .container {
   position: relative;
   width: 1170px;
@@ -26,20 +54,25 @@ body {
   color: #444;
   font-size: 14px;
   font-weight: 300;
-  font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+  font-family: "Roboto", "Open Sans", "Arial", sans-serif;
   overflow: hidden;
 }
 
-.section .container {
-  padding: 30px 0 50px 0;
+.container > h1:after {
+  content: "";
+  width: 30px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
 }
 
-.section.bg {
-  background: #f7f7f7;
+.container > h1:not(.hero) {
+  margin-bottom: 30px;
+  text-align: center;
 }
-/*
-  Header
-*/
 
 .hold {
   height: 80px;
@@ -58,7 +91,7 @@ body {
 
 .header.small {
   line-height: 50px;
-  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+  box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.8);
 }
 
 .header.small > .container > #logo {
@@ -69,46 +102,11 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: red;
+  background: purple;
   float: left;
   height: 40px;
   width: 170px;
   margin-left: 5px;
-}
-
-ul.nav {
-  float: right;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul.nav li {
-  float: left;
-  position: relative;
-}
-
-ul.nav li a {
-  transition: color 0.2s linear;
-  font-size: 18px;
-}
-
-ul.nav li:hover a {
-  color: red;
-}
-
-ul.nav li a {
-  padding: 21px;
-  color: initial;
-  text-decoration: initial;
-}
-/*
-  Slider
-*/
-
-.section .slider,
-.section .footer {
-  background: #333;
 }
 
 .slidercontent {
@@ -116,14 +114,17 @@ ul.nav li a {
 }
 
 .hero {
-  font-family: 'Roboto Slab', sans-serif;
-  color: white;
+  font-family: "Roboto Slab", sans-serif;
+  color: #fffff6;
   font-weight: normal;
   letter-spacing: 1px;
 }
 
-h1.hero {
-  font-size: 54px;
+h2 {
+  font-family: "Roboto Slab", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 h2.hero {
@@ -131,25 +132,15 @@ h2.hero {
   margin-bottom: 60px;
 }
 
-h1.hero:after {
-  content: "";
-  width: 300px;
-  position: relative;
-  border-bottom: 1px solid #aaa;
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
-}
-
 .call {
-  color: white;
+  color: #fffff6;
   display: block;
   margin-bottom: 20px;
 }
 
 .call span {
   display: inline;
-  border: 1px solid white;
+  border: 1px solid #fffff6;
   padding: 8px 13px;
   font-size: 20px;
   transition: background 0.15s linear;
@@ -159,9 +150,6 @@ h1.hero:after {
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
-/* 
-  Columns 
-*/
 
 .col {
   float: left;
@@ -191,13 +179,6 @@ h1.hero:after {
   padding-bottom: 20px;
 }
 
-.col .service,
-.col .feature {
-  font-size: 21px;
-  font-weight: 300;
-  font-family: 'Roboto Slab', sans-serif;
-}
-
 .col .service:after {
   content: "";
   width: 50px;
@@ -213,8 +194,30 @@ h1.hero:after {
   font-size: 19px;
 }
 
-.col h1.side,
-.col p.side,
+.col h1 {
+  padding: 0 1%;
+  text-align: center;
+}
+
+.col h1.side {
+  margin-left: 50px;
+  text-align: left;
+}
+
+.col p {
+  padding: 0 1%;
+  text-align: center;
+}
+
+.col p.side {
+  margin-left: 50px;
+  text-align: left;
+}
+
+.col span.feature {
+  font-size: 20px;
+}
+
 .col span.side:first-of-type {
   margin-left: 50px;
   text-align: left;
@@ -239,9 +242,28 @@ h1.hero:after {
   width: 50px;
 }
 
+.col .imgholder {
+  height: 300px;
+  width: 100%;
+  background: #333;
+  transition: background 0.3s linear;
+}
+
+.col.bg {
+  background: #fffff6;
+}
+
+.col.bg:hover .imgholder {
+  background: #555;
+}
+
+.col.pointer {
+  cursor: pointer;
+}
+
 .col:hover > .icon {
-  background: #F44336;
-  color: white;
+  background: navy;
+  color: #fffff6;
 }
 
 .col:hover > .icon.side {
@@ -252,71 +274,25 @@ h1.hero:after {
 .responsivegroup {
   display: none;
 }
-/*
-  Column specifics
-*/
-
-.col p,
-.col h1 {
-  padding: 0 1%;
-  text-align: center;
-}
 
 .group.margin {
   margin-bottom: 20px;
 }
 
-.col .imgholder {
-  height: 300px;
-  width: 100%;
-  background: #333;
-  transition: background 0.3s linear;
-}
-
-.col.bg {
-  background: #FFF;
-}
-
-.col.pointer {
-  cursor: pointer;
-}
-
-.col.bg:hover .imgholder {
-  background: #555;
-}
-
-.col span.feature {
-  font-size: 20px;
-}
-/*
-  Text
-*/
-
-.container > h1:not(.hero) {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.container > h1:after {
+.group:after {
   content: "";
-  width: 30px;
-  position: relative;
-  border-bottom: 1px solid #aaa;
-  display: block;
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
+  display: table;
+  clear: both;
 }
 
-h2 {
-  font-family: 'Roboto Slab', sans-serif;
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
+.left {
+  text-align: left;
 }
 
-.left,
-.left > h1,
+.left > h1 {
+  text-align: left;
+}
+
 .left > p {
   text-align: left;
 }
@@ -328,71 +304,47 @@ h2 {
 .reset:after {
   display: none !important;
 }
-/* 
-  Slider with Content
-*/
 
-.white h1,
-.white h2,
-.white p,
-.white div,
-.white a {
-  color: #fff;
+.white {
+  color: #fffff6;
 }
-/*
-  Responsive
-*/
 
-.group:after {
+ul.nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav li {
+  float: left;
+  position: relative;
+}
+
+ul.nav li a {
+  transition: color 0.2s linear;
+  font-size: 18px;
+  padding: 21px;
+  color: initial;
+  text-decoration: initial;
+}
+
+ul.nav li:hover a {
+  color: purple;
+}
+
+h1.hero {
+  font-size: 54px;
+}
+
+h1.hero:after {
   content: "";
-  display: table;
-  clear: both;
-}
-
-@media all and (max-width: 768px) {
-  .container {
-    width: 95%;
-  }
-  .col.four {
-    width: 48%;
-    margin: 1%;
-  }
-  .col.three {
-    display: block;
-    width: 95%;
-    padding: 0;
-    margin: 0 auto;
-    float: none;
-  }
-  .header {
-    height: auto;
-    background: #eee;
-  }
-  #logo {
-    position: initial;
-    float: none;
-    display: block;
-    transform: none;
-    margin: 10px auto 0 auto;
-  }
-  ul.nav {
-    float: none;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-  ul.nav li {
-    float: initial;
-    display: inline-block;
-  }
-  .responsivegroup {
-    display: block;
-  }
-  .responsivegroup:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  width: 300px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
 }
 
 @media all and (min-width: 768px) {
@@ -413,7 +365,7 @@ h2 {
   }
 }
 
-@media all and (max-width:450px) {
+@media all and (max-width: 450px) {
   .col, .col.four, .col.three, .col.two {
     display: block;
     width: 95%;
