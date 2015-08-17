@@ -2,7 +2,7 @@
 
 By [Cameron Yick][author] for [Rippowam Labs][sponsor]
 
-Introducing web development through building a basic website without external dependencies
+Introducing web development through building a lightweight business website
 
 > Preview the [final site][final site].
 
@@ -21,8 +21,8 @@ Introducing web development through building a basic website without external de
 1. Open up this [Codepen][codepen] 
 2. HTML corresponds to `index.html`, CSS corresponds to `assets/styles.css`, and JS corresponds to `assets/main.js`
 
-
-+ Visit [this page][tutorial] and get ready to learn.
+After you have the starter files ready...
++ Visit [this page][tutorial] get ready to learn!
 + Refer to `reference-files` if you get stuck!
 + Leave comments on any files or lines you find confusing
 
@@ -36,13 +36,14 @@ Introducing web development through building a basic website without external de
 + Leave a comment to have your site added to the gallery!
 + Learn to use GitHub so you can modify this tutorial too!
 
-#### If you found this tutorial helpful, a star is much appreciated.
+##### If you found this tutorial helpful, consider scrolling to the top of the page and starring this project :)
 
 <!-- TODO: Link to codepen -->
+<!-- TODO: Refactor jade items with mixins -->
 [author]: http://www.cameronyick.us
 [sponsor]: https://github.com/RippowamLabs
 [tutorial]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/overview.md
-[final site]: http://wwww.cameronyick.us/sparky/
+[final site]: http://www.cameronyick.us/sparky/
 [resources]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/resources.md
 [starterFiles]: https://github.com/hydrosquall/sparky-website-tutorial/tree/master/course-notes
 [codepen]: https://codepen.io/samplelink
