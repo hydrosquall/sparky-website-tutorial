@@ -37,11 +37,14 @@ One could populate the internet entirely with text `.txt` files containing the w
 _Why do we need 3 languages?_
 > Using different languages for different tasks reflects a design philosophy called **modularization**. There are hacky ways to make some languages do the jobs of others (such as using Javascript to change text color or using HTML to control page styling /layout ), but doing this is discouraged. Modularization makes code easier to understand by humans. It also makes splitting up work for teams more convenient. Clearly written code is easier to debug (fix), maintain, and improve.  
 
+What are HTML5, CSS3, and ES6?
+> These languages are maintained and discussed by various web standards committees. HTML5 and CSS3 are the latest versions of HTML and CSS. These are readable by all modern web browsers, and accommodate old web browsers reasonably well. They were preceded by (surprise!) HTML4 and CSS2. Javascript also has versions, as of August 2015 we are discussing making the leap from ES5 to ES6. Don't worry about it for now. 
+
 See the cool things you can do with CSS: [CSS Zen Garden](http://www.csszengarden.com/)
 
 ## On Accessibility 
 
-> Listen Up! In-class discussion about why designing for the weakest link benefits all users!
+> Listen Up! In-class discussion about why designing for the weakest link benefits all users.
 
 + Colors
 + Screenreaders
@@ -61,6 +64,6 @@ _Everybody wins when you keep your site as lightweight as possible_
 **Further Reading**: 
 + [Evolution of Web Design](http://sixrevisions.com/web_design/the-evolution-of-web-design/)
 
-[kindling]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/kindling.md
-[sparks]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/sparks.md
-[ignition]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/ignition.md
+[kindling]: kindling.md
+[sparks]: sparks.md
+[ignition]: ignition.md
