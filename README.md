@@ -22,7 +22,7 @@ Introducing web development through building a lightweight business website
 2. HTML corresponds to `index.html`, CSS corresponds to `assets/styles.css`, and JS corresponds to `assets/main.js`
 
 After you have the starter files ready...
-+ Visit [this page][tutorial] get ready to learn!
++ Visit [this page][tutorial] and get ready to learn!
 + Refer to `reference-files` if you get stuck!
 + Leave comments on any files or lines you find confusing
 
