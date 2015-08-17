@@ -111,16 +111,19 @@ h2 {
   color: #fffff6;
   display: block;
   margin-bottom: 20px; }
-  .call span {
+  .call a {
     display: inline;
     border: 1px solid #fffff6;
     padding: 8px 13px;
     font-size: 20px;
     -webkit-transition: background 0.15s linear;
             transition: background 0.15s linear; }
-    .call span:hover {
+    .call a:hover {
       background: rgba(255, 255, 255, 0.1);
       cursor: pointer; }
+    .call a:visited {
+      text-decoration: none;
+      color: white; }
 
 .col {
   float: left;

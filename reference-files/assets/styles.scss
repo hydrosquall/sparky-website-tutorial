@@ -168,7 +168,7 @@ h2 {
     color: $white;
     display: block;
     margin-bottom: 20px;
-    span {
+    a {
         display: inline;
         border: 1px solid $white;
         padding: 8px 13px;
@@ -177,6 +177,10 @@ h2 {
         &:hover {
             background: $white_10;
             cursor: pointer;
+        }
+        &:visited {
+            text-decoration: none;
+            color:white;
         }
     }
 }
