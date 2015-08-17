@@ -1,1 +1,3 @@
 reference-files/*.jade
+reference-files/templates/
+prepros.cfg
