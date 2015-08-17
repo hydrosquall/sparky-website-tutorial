@@ -1,7 +1,7 @@
 ## Making Modern Websites: Basic Site
 
-
-Blast from the [past](http://retrosite.ninja/)
+We've come a long way since the websites of the 90s! What changed?
+> Blast from the [past](http://retrosite.ninja/)
 
 ### Page Architecture
 
@@ -9,7 +9,7 @@ Head, body, links to outside tools fonts and pictures
 
 ### To Build a Fire: HTML Elements
 
-Page Structure and slowly adding content
+Page Structure and slowly adding content (See codepen)
 
 ### Sparkly Sparks: CSS for Styles
 
@@ -17,7 +17,7 @@ Didn't exist at first.
 
 Breaking Down the Stylesheet + Cascading Effect
 
-SElectors
+Selectors
 
 > advanced: Styles at the head of the document: do it for pageload time for above the fold
 

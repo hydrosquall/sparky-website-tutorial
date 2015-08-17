@@ -38,7 +38,7 @@ After you have the starter files ready...
 
 ##### If you found this tutorial helpful, consider scrolling to the top of the page and starring this project :)
 
-<!-- TODO: Link to codepen -->
+<!-- TODO: Link to codepen. Look into relative filepaths -->
 <!-- TODO: Refactor jade items with mixins -->
 [author]: http://www.cameronyick.us
 [sponsor]: https://github.com/RippowamLabs
@@ -46,4 +46,4 @@ After you have the starter files ready...
 [final site]: http://www.cameronyick.us/sparky/
 [resources]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/resources.md
 [starterFiles]: https://github.com/hydrosquall/sparky-website-tutorial/tree/master/course-notes
-[codepen]: https://codepen.io/samplelink
+[codepen]: http://codepen.io/hydrosquall/pen/KpLqZV
