@@ -7,7 +7,7 @@ We've come a long way since the websites of the 90s! What changed?
 
 In other cases...
 + [Greenlight Capital](https://www.greenlightcapital.com/) (Worth $10 Billion)
-+ [Berkshire Hathaway](http://www.berkshirehathaway.com/) (Website of the world's wealthiest man)
++ [Berkshire Hathaway](http://www.berkshirehathaway.com/) (Website of Warren Buffett, World's Wealthiest Man)
 
 Adding more elements isn't necessarily the answer. 
 ![Bad Web Design](http://wpbusinesstips.com/wp-content/uploads/2014/08/baddesign2.jpg)
@@ -34,9 +34,188 @@ A bare-bones website doesn't have any CSS or JS, because the HTML is the place f
 ####Part 1: Learn the ABCs: HTML Elements
 > Read [components](components.md) and discuss bonus elements
 
-We will be using a combination of <div>
+We will be using a combination of `<div>`, `<h1>`, `<p>`, `<ul>`, `<img>`, and `<a>` tags. 
 
 ####Part 2: Using Components
+
+This is the foundation of your website. Paste this into `index.html` to begin. We'll talk through each piece step by step. 
+
+You can paste each region below the previous region in the "body" area of your foundation. There is a little bit of hand-waving happening here in the interest of saving time, but leave a comment [here](https://github.com/hydrosquall/sparky-website-tutorial/issues) if you get stuck!
+```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <!-- optional metadata tags -->
+            <title>WEBSITE TITLE</title>
+            <!-- link to styles -->
+        </head>
+        <body>
+            <!-- Add website body content -->
+            <!-- link to scripts -->
+        </body>
+    </html>
+```
+
+**Navigation Bar**
+```html
+    ... <!-- This is the first block -->
+    <div class="hold">
+      <div class="header">
+        <div class="container">
+          <div id="logo"></div>
+          <ul class="nav">
+            <!-- This is a page link -->
+            <li><a href="#">Demo</a></li>
+            <!-- Make 3 more links! -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    ...
+```
+
+**Hero Section**
+```html
+    ...
+    <div class="section">
+      <div class="slider">
+        <div class="container slidercontent">
+          <h1 class="hero">Spark!</h1>
+          <h2 class="hero">A Modern Idea Factory</h2>
+          <div class="call"><a href="https://github.com/hydrosquall/sparky-website-tutorial">Learn More</a></div>
+        </div>
+      </div>
+    </div>
+    ...
+```
+
+** Pitch Section**
+Note we are using emoticons ( `:)` ) instead of pictures to save data! However, you could use icons from font-awesome instead.
+
+```html
+    ...
+     <div class="section">
+      <div class="container">
+        <h1 class="callout">Whatever challenges you face, we can help.</h1>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <!-- This is a service-block -->
+        <div class="col four">
+          <h1 class="icon">[]</h1>
+          <h1 class="service">Duct Tape</h1>
+          <p>For all your mechanical engineering needs!</p>
+        </div>
+        <!-- Repeat 3 more service-blocks -->
+        <!--<div class="responsivegroup"></div> -->
+      </div>
+    </div>
+    ...
+```
+
+**Pictures Thumbnails Area**
+```html
+    <div class="section bg">
+      <div class="container">
+        <h1>Projects</h1>
+        <h2>We have built cool things in all these places!</h2>
+        <!-- this is a place card -->
+        <div class="col three bg nopad pointer">
+          <div class="imgholder"></div>
+          <h1 class="feature">USA</h1>
+          <p>Wow wow</p>
+        </div>
+       <!-- Make 2 more place cards -->
+        <div class="group margin"></div>
+       <!-- this Make 3 more place cards -->
+      </div>
+    </div>
+```
+
+**Team Bios**
+```html
+     <div class="section">
+      <div class="container">
+        <h1>Our Team</h1>
+        <h2>Professional and Experienced!</h2>
+        <!-- This div holds a team card. -->
+        <div class="col three">
+          <h1 class="icon side">ಠ_ಠ</h1>
+          <h1 class="feature side">Suspicious Bob</h1>
+          <p class="side">Bob pays *very* close attention to detail.</p>
+        </div>
+       <!-- Repeat the team-card item 2 more times -->
+        <div class="group margin"></div>
+        <!-- Repeat the .col three 3 more times -->
+        <div class="group margin"></div>
+      </div>
+    </div>
+```
+
+**Testimonial Cards**
+```html
+   <div class="section bg">
+     <div class="container">
+       <h1>Testimonials</h1>
+       <h2>Happy Customers or your money back!</h2>
+       <!-- This is a testimonial! -->
+       <div class="col two bg margin extrapad">
+         <h1 class="icon side">A+</h1><span class="feature side">JP</span><span class="side"> - Bird Wrangler</span>
+         <p class="side">Don't let the wow drive the bus</p>
+       </div>
+        <!-- Why not add a few more? -->
+     </div>
+   </div>
+```
+
+**Two Column Layout Call to Action**
+```html
+    <div class="section">
+      <div class="container">
+        <!-- This is the first column -->
+        <div class="col two">
+          <h1 class="icon">work</h1>
+          <p>Want to get started? <a href="#">Submit Idea</a></p>
+        </div>
+        <!-- Why not add a second one? column -->
+      </div>
+    </div>
+```
+
+**Footer**
+Feel free to change the text and links!
+```html
+    <div class="section">
+      <div class="footer">
+        <div class="container white">
+          <div class="col four left">
+            <h1>What?</h1>
+            <p>This is a basic modern website.</p>
+            <p>You can use it to showcase your product or business!</p>
+          </div>
+          <div class="col four left">
+            <h1>How?</h1>
+            <p>CSS3 and HTML. JS for header shrinking; optional. Site works perfectly with JS disabled </p>
+          </div>
+          <div class="col four left">
+            <h1>Why?</h1>
+            <p>Many popular HTML themes have thousands of lines of HTML, thousands of lines of CSS and several JS plugins on every page amounting to tens of thousands of lines of JavaScript.</p>
+            <p>This is a lightweight way to achieve some stylish modern effects!</p>
+          </div>
+          <div class="col four left">
+            <h1>Who?</h1>
+            <p>This site was created for a <a href="https://github.com/hydrosquall/sparky-website-tutorial">tutorial </a>by <a href="http://www.cameronyick.us">Cameron Yick. </a></p>
+            <p>It is based upon <a href="http://atunnecliffe.com" target="_blank">Andrew Tunnecliffe's</a> 'Every Modern Website'.</p>
+          </div>
+          <div class="group"></div>
+        </div>
+      </div>
+    </div>
+```
+
+You can see a finished copy of the site in the `reference-files` folder or live [here](http://www.cameronyick.us/sparky/)
 
 ### Sparkly Sparks: CSS for Styles
 
@@ -50,12 +229,16 @@ CSS is younger than HTML!
 + Selectors: Chaining Selectors
 + CSS Styles: Google them and learn by doing
 
+> Covered in lecture
+
 _I heard we can sneak styles directly onto an html page. Why are we doing this?_
 > Short answer for beginners: It's better for modularity and makes your code more reusable. It also makes life easier for search engines.
 For advanced users: Styles at the head of the document: do it to improve pageload time. Only use the styles that affect the image above the fold, then put the stylesheet at the end of the page together with your script imports. This will minimize the time the user gets a blank screen, and defers loading the rest of the styles until the first screen area has been properly formatted.
 
 _Why don't we edit the styles directly on the HTML element? `style` attribute is dying to be used!_
 > Inline styles are BAD PRACTICE, but they technically work. They are used in niche applications such as html in emails, since you can't link to stylesheets for security reasons
+
+> Show how to link to stylesheet
 
 ### Sparks Fly: A dose of Javascript
 
@@ -87,6 +270,7 @@ window.onscroll = function() {
   }
 };
 ```
+> Show how to link to scripts
 
 Challenge: What would you do to change the header COLOR on scroll instead of header HEIGHT?
 

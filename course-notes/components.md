@@ -59,8 +59,9 @@ Your information will consist of
     <a href="somewebsite.com"><img src="coolpic.png"></a>
     <!-- To make a link look like a button, create a class with button styles -->
     <a href="somesite.com" class="button">Submit me</a> 
+    <a href="index.html" target="_blank">Open in new tab!</a>
 ```
-You can make relative links (relative to the page the file is on, which will break if you move the original page) or absolute links (which will work as long as the file you link to doesn't move) 
+You can make relative links (relative to the page the file is on, which will break if you move the original page) or absolute links (which will work as long as the file you link to doesn't move). You set the location using the `href` tag. If you want the link to open in a new tab, add the attribute `target="_blank"`.  
 
 > Discuss filepath notation if necessary!
 
