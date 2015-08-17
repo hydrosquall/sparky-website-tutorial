@@ -1,6 +1,8 @@
 ### Ignition: What's Next?
 
-Congratulations! You've built your first website. What would you like to learn next?
+Congratulations! You've built your first website. What can we do next?
+
+**Recommended**: Put your website live on the web for FREE with Github [Pages](https://pages.github.com/)! (Requires Github Account)
 
 + **Design**
     + **Principles** - 31. "Good design adds value faster than it adds cost."- Thomas C. Gale

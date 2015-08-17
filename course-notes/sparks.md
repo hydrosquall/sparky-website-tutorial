@@ -40,7 +40,11 @@ We will be using a combination of `<div>`, `<h1>`, `<p>`, `<ul>`, `<img>`, and `
 
 This is the foundation of your website. Paste this into `index.html` to begin. We'll talk through each piece step by step. 
 
-You can paste each region below the previous region in the "body" area of your foundation. There is a little bit of hand-waving happening here in the interest of saving time, but leave a comment [here](https://github.com/hydrosquall/sparky-website-tutorial/issues) if you get stuck!
+You can paste each region below the previous region in the "body" area of your foundation. There is a little bit of hand-waving happening here in the interest of saving time, but leave a comment [here](https://github.com/hydrosquall/sparky-website-tutorial/issues) if you get stuck and I'll try to help!
+
+If you think you have an indentation problem, the [HTML Prettifier](http://www.dirtymarkup.com/) can help you fix your code so it's easier to read.
+
+Feel free to make duplicates of any block, or skip blocks altogether! Doing this is mainly for the muscle memory. Once you understand multiplication, you don't need to keep counting 1 by 1 to convince yourself that it works.
 ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -136,7 +140,7 @@ Note we are using emoticons ( `:)` ) instead of pictures to save data! However, 
 
 **Team Bios**
 ```html
-     <div class="section">
+    <div class="section">
       <div class="container">
         <h1>Our Team</h1>
         <h2>Professional and Experienced!</h2>
@@ -219,17 +223,43 @@ You can see a finished copy of the site in the `reference-files` folder or live 
 
 ### Sparkly Sparks: CSS for Styles
 
-CSS is younger than HTML!
+So much typing, and yet the site doensn't look so great! What happened?
+
+Let's add this line to the page head:
+
+```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>WEBSITE TITLE</title>
+            <link rel="stylesheet" type="text/css" href="assets/styles.css">
+        </head>
+```
+Whoa! The site should look significantly better. How did that happen?
+
+> If you're using the Codepen version of the tutorial, don't worry about this step. The stylesheet (the collection of CSS declarations) was inserted automatically.
 
 ![Anatomy of a rule](http://ironion.com/wp-content/uploads/2015/06/cssanatomy1.png)
+_The stylesheet is made of a bunch of these!_
 
 #### Part 1: Learn the ABCs: CSS Declarations
 + Breaking Down the Stylesheet + Cascading Effect
-+ Selectors: ELements, .Classes, and #IDs
++ Selectors: Elements, .Classes, and #IDs
 + Selectors: Chaining Selectors
 + CSS Styles: Google them and learn by doing
 
 > Covered in lecture
+
+The declarations "cascade" (the **C** in CSS) from top to bottom. This means that if multiple declarations affect a property, the last declaration will override the previous ones. Basically when there are conflicts, the last rules wins. 
+
+This means you should make your general rules higher in the stylesheet, and your more specific rules towards the bottom. Some people think the Cascade is a very frustrating part of web design, but it can be a useful design tool if applied carefully!
+
+The source code provided with this tutorial includes a wide range of rules that designate how page elements should look. These properties include spacing, coloring, reactions to hovering, animations, sizing, and more. We'll dive into the source code and examine what some of the common properties are. 
+
+There are too many CSS properties to memorize - [336](http://meiert.com/en/indices/css-properties/) as of August 10, 2015. Don't worry about memorizing them all- you'll learn the important ones from reading code and building basic websites! 
+
+> Explore `styles.css` as time permits.
 
 _I heard we can sneak styles directly onto an html page. Why are we doing this?_
 > Short answer for beginners: It's better for modularity and makes your code more reusable. It also makes life easier for search engines.
@@ -238,20 +268,20 @@ For advanced users: Styles at the head of the document: do it to improve pageloa
 _Why don't we edit the styles directly on the HTML element? `style` attribute is dying to be used!_
 > Inline styles are BAD PRACTICE, but they technically work. They are used in niche applications such as html in emails, since you can't link to stylesheets for security reasons
 
-> Show how to link to stylesheet
-
 ### Sparks Fly: A dose of Javascript
 
 Javascript is the scripting language of the internet. Every web browser has a javascript console that can play with.
 
 > Cue Chrome Developer Console.
 
-You can import an external library but it may have more code than you need, and you need to trust that the provider isn't doing anything malicious without telling you.
+You can import an external library but it may have more code than you need, and you need to trust that the provider isn't doing anything malicious or won't be compromised. It's usually safe, but it's good to avoid unnecessary risk!
 
 _I don't want to make a separate file! Can I put my scripts on the html page?_
 > Inline scripts are possible but discouraged. If for some reason you can't link to an external js file, you can put them on the html page inside `script` tags.
 
 #### Examining the Code for a Sticky Header
+
+Let's look at the code living in `main.js`. We want to add a neat effect for when people scroll down the page.
 
 Design Logic
 + Watch something about the page or window
@@ -272,8 +302,20 @@ window.onscroll = function() {
 ```
 > Show how to link to scripts
 
+```html
+    <html>
+        <head>
+            <!-- Header code -->
+        </head>
+        <body>
+            ...
+            <!-- all your great html code -->
+            <script type="text/javascript" src="main.js"></script>
+        </body>
+    </html>
+```
 Challenge: What would you do to change the header COLOR on scroll instead of header HEIGHT?
 
-Wow! You've finished your first website! Let's see what kinds of things you can learn next.
+Wow! You've finished your first website! Let's see what kinds of things there are left to learn!
 
 ###Next: [Ignition](ignition.md)

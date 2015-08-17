@@ -8,12 +8,20 @@ Things you'll use again and again, regardless of experience level!
 - **Greenshot** for documenting your work (thanks Dan Schlosser)
 
 ## Code Cleaners (Prettify)
+- dirtymarkup.com
+- cleancss.com
 
 ## Image Optimizers
+- TinyPNG
+- Compressor.io
 
 ## Color Pickers
+- Adobe Kuler
+- Paletton
 
 ## Newsletters
+- Sidebar.io
+- Developer Daily
 
 ## Placeholder Content
     + [Images](http://www.wpfreeware.com/tutorial/placeholder-images-generator-service-web-designers/)
