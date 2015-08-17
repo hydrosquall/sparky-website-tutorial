@@ -1,5 +1,5 @@
 ### Ignition: What's Next?
-![medal](sparky.png)
+![medal](medal.png)
 ####Congratulations! You've built your first website! 
 
 What can we do next?
