@@ -3,7 +3,7 @@
 ![How to drawn an owl](http://snag.gy/Z2Spu.jpg)
 
 
-_Everything looks complicated when it isn't broken into chunks._
+_Breaking new skills into chunks makes life better for everyone._
 
 ## Topics
 
@@ -13,6 +13,6 @@ _Everything looks complicated when it isn't broken into chunks._
 
 
 
-[kindling]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/kindling.md
-[sparks]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/sparks.md
-[ignition]: https://github.com/hydrosquall/sparky-website-tutorial/blob/master/course-notes/ignition.md
+[kindling]: kindling.md
+[sparks]: sparks.md
+[ignition]: ignition.md
